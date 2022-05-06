@@ -10108,3 +10108,6 @@ java.net.ConnectException: Connection refused: connect
 
 !ENTRY com.tibco.bw.core.design.debug.ui 1 0 2022-05-06 17:39:40.685
 !MESSAGE Debugger successfully connected.
+
+!ENTRY org.eclipse.bpel.validator 1 0 2022-05-06 19:30:43.686
+!MESSAGE Validator Startup 310ms
