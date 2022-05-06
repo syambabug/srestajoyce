@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/PRACTICE/Service Descriptors/practice.REST-2-Resource1.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://ns.tibco.com/bw/palette/dataformat/514cac5e-4f9f-434c-ba02-61de0a405ed7"
+    },
+    {
+        "jsonSchemaLocation": "/PRACTICE/Service Descriptors/practice.REST-2-Resource1.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://ns.tibco.com/bw/palette/dataformat/b48e5f8d-5662-4b61-ac4d-876ecef8d440"
+    }
+]}

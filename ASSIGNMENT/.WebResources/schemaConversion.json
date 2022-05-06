@@ -1,0 +1,22 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/ASSIGNMENT/Service Descriptors/assignment.Process1-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/CustType"
+    },
+    {
+        "jsonSchemaLocation": "/ASSIGNMENT/Service Descriptors/assignment.FetchDetails-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/1CustomerDetails"
+    },
+    {
+        "jsonSchemaLocation": "/ASSIGNMENT/Service Descriptors/assignment.gettherecords-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/1CustomerDetails"
+    },
+    {
+        "jsonSchemaLocation": "/ASSIGNMENT/Service Descriptors/assignment.gettingfromcallprocess-Resource1.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/1CustomerDetails"
+    }
+]}

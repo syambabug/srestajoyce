@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/anothermsg." xmlns:tns="http://www.example.org/anothermsg." elementFormDefault="qualified">
+
+    <complexType name="MSG_TYPE">
+    	<sequence>
+    		<element name="product" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="MSG" type="tns:MSG_TYPE"></element>
+</schema>

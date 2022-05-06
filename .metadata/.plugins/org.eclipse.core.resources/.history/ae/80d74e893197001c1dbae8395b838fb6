@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/breakfast_menu" xmlns:tns="http://www.example.org/breakfast_menu" elementFormDefault="qualified">
+
+    <complexType name="Breakfast_menuType"></complexType>
+
+    <complexType name="Food_Type"></complexType>
+
+    <complexType name="Name_type"></complexType>
+
+    <complexType name="Price_Type"></complexType>
+
+    <complexType name="DescriptionType"></complexType>
+
+    <complexType name="Calories_Type"></complexType>
+
+    <element name="NewElement" type="string"></element>
+</schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Methods" xmlns:tns="http://www.example.org/Methods" elementFormDefault="qualified">
+
+    <complexType name="OperationMethod">
+    	<sequence>
+    		<element ref="tns:host"></element>
+    		<element ref="tns:port"></element>
+    		<element ref="tns:operationname"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="OperationMethod" type="tns:OperationMethod"></element>
+
+    <element name="host" type="string"></element>
+
+    <element name="operationname" type="string"></element>
+
+    <element name="port" type="string"></element>
+</schema>

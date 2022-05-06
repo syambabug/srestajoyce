@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Book_Store" xmlns:tns="http://www.example.org/Book_Store" elementFormDefault="qualified">
+
+    <complexType name="Book_StoreType">
+    	<sequence>
+    		<element ref="tns:Book" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="Book_Type"></complexType>
+
+    <element name="Title" type="string"></element>
+
+    <element name="Author" type="string"></element>
+
+    <element name="Year" type="int"></element>
+
+    <element name="Price" type="int"></element>
+
+    <element name="Bookstore" type="tns:Book_StoreType"></element>
+
+    <element name="Book" type="tns:Book_Type"></element>
+</schema>

@@ -1,0 +1,70 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:1751",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/resource" : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-resource",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "CardType",
+          "in" : "query",
+          "description" : "",
+          "type" : "integer",
+          "format" : "int32",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a CustDetails to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/CustDetails"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Cust" : {
+      "type" : "object",
+      "required" : [ "CustName", "CustType", "CustID", "CardType" ],
+      "properties" : {
+        "CustID" : {
+          "type" : "integer"
+        },
+        "CustName" : {
+          "type" : "string"
+        },
+        "CustType" : {
+          "type" : "string"
+        },
+        "CardType" : {
+          "type" : "string"
+        }
+      }
+    },
+    "CustDetails" : {
+      "type" : "object",
+      "properties" : {
+        "Cust" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Cust",
+            "uniqueItems" : false
+          }
+        }
+      }
+    }
+  }
+}

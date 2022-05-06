@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_7b31fe20-9179-45b5-a597-2514c682cfd8="http://ns.tibco.com/bw/palette/dataformat/7b31fe20-9179-45b5-a597-2514c682cfd8" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_Clp_Ebi_EeyR_dCDLMYgdg" name="assignment.CCardtype" type="dataformat:DataFormat">
+  <imports xmi:id="_WYScELi_EeyR_dCDLMYgdg" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ns.tibco.com/bw/palette/dataformat/7b31fe20-9179-45b5-a597-2514c682cfd8"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_Clp_Eri_EeyR_dCDLMYgdg" formatType="Delimiter separated" colSeparator="," colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="Carriage Return/Line Feed (windows)" fillCharacter="Space" schemaElementQName="_7b31fe20-9179-45b5-a597-2514c682cfd8:CCustomerDeatails" fieldOffsetsStr="CCustomerID(0,0)&#xA;CCustomerName(0,0)&#xA;CCustomerACTYPE(0,0)&#xA;CCustomerCardType(0,0)">
+    <fieldOffsets xmi:id="_WbI7wLi_EeyR_dCDLMYgdg" name="CCustomerID"/>
+    <fieldOffsets xmi:id="_WbI7wbi_EeyR_dCDLMYgdg" name="CCustomerName"/>
+    <fieldOffsets xmi:id="_WbI7wri_EeyR_dCDLMYgdg" name="CCustomerACTYPE"/>
+    <fieldOffsets xmi:id="_WbI7w7i_EeyR_dCDLMYgdg" name="CCustomerCardType"/>
+  </jndi:configuration>
+</jndi:namedResource>

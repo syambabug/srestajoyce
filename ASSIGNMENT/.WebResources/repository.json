@@ -1,0 +1,29 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/assignment.Process1-Resource.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/assignment.FetchDetails-Resource.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/assignment.gettherecords-Resource.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/assignment.gettingfromcallprocess-Resource1.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/assignment.CopyOfgettingfromcallprocessXML-Resource1.json",
+            "type": "generated"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/RestService/Service Descriptors/restservice.GetCustomerDetails2-getcustdetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/CustomerDetails"
+    },
+    {
+        "jsonSchemaLocation": "/RestService/Service Descriptors/restservice.Getcustomerdetails3-Resource1.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "/T1651566738307Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/RestService/Service Descriptors/restservice.getcustomerdetails5-Resource3.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/CustomerDetails"
+    }
+]}

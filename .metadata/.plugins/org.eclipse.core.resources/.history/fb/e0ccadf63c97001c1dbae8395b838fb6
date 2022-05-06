@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ReserveBankof_india" xmlns:tns="http://www.example.org/ReserveBankof_india" elementFormDefault="qualified">
+
+    <complexType name="ReserveBankOf_IndiaType">
+    	<sequence>
+    		<element ref="tns:CoOperatebank"></element>
+            <element ref="tns:DevelopmentBank"></element>
+            <element ref="tns:CommercialBank"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Bank_TypesType"></complexType>
+
+    <complexType name="Commercial_bankType">
+    	<sequence>
+    		<element ref="tns:Nationalized"></element>
+    		<element ref="tns:Private"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Co_Operate_bankType">
+    	<sequence>
+    		<element ref="tns:ShortTermCredit"></element>
+    		<element ref="tns:LongTermCredit"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Development_BankTypes">
+    	<sequence>
+    		<element ref="tns:Aggriculrural"></element>
+    		<element ref="tns:Industrial"></element>
+    		<element ref="tns:EXIM"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="Nationalized" type="string"></element>
+
+    <element name="Private" type="string"></element>
+
+    <element name="ShortTermCredit" type="string"></element>
+
+    <element name="LongTermCredit" type="string"></element>
+
+    <element name="Bank" type="tns:ReserveBankOf_IndiaType"></element>
+
+    <element name="Bank" type="tns:ReserveBankOf_IndiaType"></element>
+
+    <element name="CommercialBank" type="tns:Commercial_bankType"></element>
+
+    <element name="CoOperatebank" type="tns:Co_Operate_bankType"></element>
+
+    <element name="DevelopmentBank" type="tns:Development_BankTypes"></element>
+
+    <element name="EXIM" type="string"></element>
+
+    <element name="Industrial" type="string"></element>
+
+    <element name="Aggriculrural" type="string"></element>
+
+</schema>

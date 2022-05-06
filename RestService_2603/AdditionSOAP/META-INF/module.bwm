@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AddRec="http://www.tibco.com/AddRec/" xmlns:Addition="http://www.tibco.com/Addition/" xmlns:AdditionSoap="http://www.tibco.com/AdditionSoap/" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:FETCH="http://www.tibco.com/FETCH/" xmlns:GET="http://www.tibco.com/GET/" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:_1CustomerDetails="http://www.example.org/1CustomerDetails" xmlns:_2CustomerDetails="http://www.example.org/2CustomerDetails" xmlns:add="http://www.tibco.com/add/" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_xQKvELogEeyrtM5lHVrGFw" targetNamespace="http://tns.tibco.com/bw/composite/AdditionSOAP" name="AdditionSOAP" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_FvackLr0EeyPhLt4uZ2aYg" name="GET" promote="ComponentGET/GET">
+    <sca:interface.wsdl xmi:id="_FvbDo7r0EeyPhLt4uZ2aYg" interface="http://www.tibco.com/GET/#wsdl.interface(GET)" scaext:wsdlLocation="../Service%20Descriptors/GET.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_FvgjMLr0EeyPhLt4uZ2aYg" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/7eaedd40540e48aab79a77971db10bf6/SOAPServiceBinding" portTypeQName="GET:GET" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/AdditionSOAP/Service%20Descriptors/GET.wsdl">
+      <bindingType xmi:id="_FvhKQLr0EeyPhLt4uZ2aYg" style="RPC"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_MztJQLr1EeyPhLt4uZ2aYg" endpointURI="/SOAPServiceBinding/gET/" httpConnector="additionsoap.HTTPConnectorResource"/>
+      <operationConfiguration xmi:id="_FvhKQbr0EeyPhLt4uZ2aYg" operationName="NewOperation" action="NewOperation" actionNeeded="true">
+        <bindingType xmi:id="_FvhKQrr0EeyPhLt4uZ2aYg"/>
+        <messageConfiguration xmi:id="_FvhKQ7r0EeyPhLt4uZ2aYg" messageQName="GET:NewOperationRequest" wsdlLocation="platform:/resource/AdditionSOAP/Service%20Descriptors/GET.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_FvhKRLr0EeyPhLt4uZ2aYg" partName="ReqOperationRequest" partTypeName="GET:request"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_FvhKRbr0EeyPhLt4uZ2aYg" messageQName="GET:NewOperationResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/AdditionSOAP/Service%20Descriptors/GET.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_FvhKRrr0EeyPhLt4uZ2aYg" partName="ResOperationResponse" partTypeName="_2CustomerDetails:CustomerDetails_type"/>
+        </messageConfiguration>
+        <context xmi:id="_FvhKR7r0EeyPhLt4uZ2aYg">
+          <inputMapping xmi:id="_FvhKSLr0EeyPhLt4uZ2aYg"/>
+          <outputMapping xmi:id="_FvhKSbr0EeyPhLt4uZ2aYg" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_FvhKSrr0EeyPhLt4uZ2aYg" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:service xmi:id="_t3UpQLr3EeyPhLt4uZ2aYg" name="AddRec" promote="ComponentAddRec/AddRec">
+    <sca:interface.wsdl xmi:id="_t3VQUrr3EeyPhLt4uZ2aYg" interface="http://www.tibco.com/AddRec/#wsdl.interface(AddRec)" scaext:wsdlLocation="../Service%20Descriptors/AddRec.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_t3eaQLr3EeyPhLt4uZ2aYg" name="SOAPServiceBinding1" targetNamespace="http://www.tibco.com/c269b36d63d749e5afe71b05d735c4ea/SOAPServiceBinding1" portTypeQName="AddRec:AddRec" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/AdditionSOAP/Service%20Descriptors/AddRec.wsdl">
+      <bindingType xmi:id="_t3eaQbr3EeyPhLt4uZ2aYg" style="RPC"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_yzfBQLr3EeyPhLt4uZ2aYg" endpointURI="/SOAPServiceBinding1/addRec/" httpConnector="additionsoap.HTTPConnectorResource"/>
+      <operationConfiguration xmi:id="_t3eaQrr3EeyPhLt4uZ2aYg" operationName="AddOperations" action="AddOperations" actionNeeded="true">
+        <bindingType xmi:id="_t3eaQ7r3EeyPhLt4uZ2aYg"/>
+        <messageConfiguration xmi:id="_t3eaRLr3EeyPhLt4uZ2aYg" messageQName="AddRec:AddOperationsRequest" wsdlLocation="platform:/resource/AdditionSOAP/Service%20Descriptors/AddRec.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_t3eaRbr3EeyPhLt4uZ2aYg" partName="ReqOperationRequest" partTypeName="_2CustomerDetails:CustomerDetails_type"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_t3eaRrr3EeyPhLt4uZ2aYg" messageQName="AddRec:AddOperationsResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/AdditionSOAP/Service%20Descriptors/AddRec.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_t3eaR7r3EeyPhLt4uZ2aYg" partName="ResOperationResponse" partTypeName="_2CustomerDetails:CustomerDetails_type"/>
+        </messageConfiguration>
+        <context xmi:id="_t3eaSLr3EeyPhLt4uZ2aYg">
+          <inputMapping xmi:id="_t3fBULr3EeyPhLt4uZ2aYg"/>
+          <outputMapping xmi:id="_t3fBUbr3EeyPhLt4uZ2aYg" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_t3fBUrr3EeyPhLt4uZ2aYg" bindingName="SOAPServiceBinding1"/>
+  </sca:service>
+  <sca:property xmi:id="_yi_o4LogEeyrtM5lHVrGFw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_yjSj0LogEeyrtM5lHVrGFw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_yjcU0LogEeyrtM5lHVrGFw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_yjmF0LogEeyrtM5lHVrGFw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_yjvPwLogEeyrtM5lHVrGFw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_yj0IQLogEeyrtM5lHVrGFw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_yj9SMLogEeyrtM5lHVrGFw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ykHDMLogEeyrtM5lHVrGFw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ykQNILogEeyrtM5lHVrGFw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_FvZOcLr0EeyPhLt4uZ2aYg" name="ComponentGET" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_FvZOcbr0EeyPhLt4uZ2aYg" processName="additionsoap.GET"/>
+    <sca:service xmi:id="_FvZ1gLr0EeyPhLt4uZ2aYg" name="GET">
+      <sca:interface.wsdl xmi:id="_FvZ1gbr0EeyPhLt4uZ2aYg" interface="http://www.tibco.com/GET/#wsdl.interface(GET)" scaext:wsdlLocation="../Service%20Descriptors/GET.wsdl"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_t3S0ELr3EeyPhLt4uZ2aYg" name="ComponentAddRec" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_t3S0Ebr3EeyPhLt4uZ2aYg" processName="additionsoap.AddRec"/>
+    <sca:service xmi:id="_t3UCMLr3EeyPhLt4uZ2aYg" name="AddRec">
+      <sca:interface.wsdl xmi:id="_t3UCMbr3EeyPhLt4uZ2aYg" interface="http://www.tibco.com/AddRec/#wsdl.interface(AddRec)" scaext:wsdlLocation="../Service%20Descriptors/AddRec.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

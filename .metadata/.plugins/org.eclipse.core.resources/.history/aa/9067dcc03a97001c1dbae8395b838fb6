@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ReserveBankof_india" xmlns:tns="http://www.example.org/ReserveBankof_india" elementFormDefault="qualified">
+
+    <complexType name="ReserveBankOf_IndiaType"></complexType>
+
+    <complexType name="Bank_TypesType"></complexType>
+
+    <complexType name="Commercial_bankType"></complexType>
+
+    <complexType name="Co_Operate_bankType"></complexType>
+
+    <complexType name="Development_BankTypes"></complexType>
+
+    <element name="Nationalized" type="string"></element>
+
+    <element name="Private" type="string"></element>
+
+    <element name="ShortTermCredit" type="string"></element>
+
+    <element name="LongTermCredit" type="string"></element>
+
+    <element name="Bank" type="tns:Bank_TypesType"></element>
+
+    <element name="ReserveBankOfIndia" type="tns:ReserveBankOf_IndiaType"></element>
+
+    <element name="CommercialBank" type="tns:Commercial_bankType"></element>
+
+    <element name="CoOperatebank" type="tns:Co_Operate_bankType"></element>
+
+    <element name="DevelopmentBank" type="tns:Development_BankTypes"></element>
+</schema>

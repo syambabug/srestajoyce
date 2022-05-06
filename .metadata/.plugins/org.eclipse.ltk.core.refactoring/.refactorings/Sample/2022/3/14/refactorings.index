@@ -1,0 +1,6 @@
+1648381625988	Change XSD Element name from 'primitive' to 'CustomerStatus'
+1648381661260	Change XSD Element name from 'primitive1' to 'CustomerProof'
+1648381723560	Change XSD Element name from 'primitive' to 'CustomerCreatedDateTime'
+1648404972899	Rename resource 'RECEIVER2.bwp'
+1648548995287	Delete Module Configuration Property 'FilenameProperty'
+1648548999600	Delete Module Configuration Property 'FilenameProperty1'

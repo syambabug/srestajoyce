@@ -1,0 +1,37 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/restservice.GetCustomerDetails-Resource.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/restservice.GetCustomerDetails2-getcustdetails.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/restservice.Getcustomerdetails3-Resource1.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/restservice.Getcustomerdetails4-Resource2.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/restservice.getcustomerdetails5-Resource3.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/restservice.getcustomerdetails6-getcustomerdetails6.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/restservice.getcustomerdetails6-Resource4.json",
+            "type": "generated"
+        }
+    ]
+}

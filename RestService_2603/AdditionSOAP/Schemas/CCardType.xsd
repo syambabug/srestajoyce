@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/CCardType" xmlns:tns="http://www.example.org/CCardType" elementFormDefault="qualified">
+
+    <complexType name="CCustomerDetailsType">
+    	<sequence>
+    		<element ref="tns:CCustomer" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="CCustomerTypE">
+    	<sequence>
+    		<element ref="tns:CCardTyrE"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="CCustomerDetails" type="tns:CCustomerDetailsType"></element>
+
+    <element name="CCustomer" type="tns:CCustomerTypE"></element>
+
+    <element name="CCardTyrE" type="string"></element>
+</schema>

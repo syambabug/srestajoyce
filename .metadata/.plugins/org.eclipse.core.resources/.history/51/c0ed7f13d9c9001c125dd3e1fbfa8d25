@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_qvYrQLcCEeyDSoRpqfkokQ" targetNamespace="http://tns.tibco.com/bw/composite/ASSIGNMENT" name="ASSIGNMENT" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_cGXoArf1EeyumO4UQE2UTw" name="resource" promote="Componentgettherecords/resource">
+    <sca:interface.wsdl xmi:id="_cGXoBrf1EeyumO4UQE2UTw" interface="http://xmlns.example.com/20220409163820PLT#wsdl.interface(resource)" scaext:wsdlLocation="../Processes/assignment/gettherecords.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_cGhZALf1EeyumO4UQE2UTw" name="RestService" path="/resource" docBasePath="http://localhost:7777/ASSIGNMENT" docResourcePath="Resource" basePath="/" connector="assignment.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/assignment.gettherecords-Resource.json">
+      <operation xmi:id="_cGhZArf1EeyumO4UQE2UTw" operationName="get" nickname="get-resource" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_LG9EELf2EeyumO4UQE2UTw">
+          <parameterMapping xmi:id="_3qvtkLf2EeyumO4UQE2UTw" parameterName="CCARDTYPE" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_cGhZBLf1EeyumO4UQE2UTw"/>
+      <advancedConfig xmi:id="_cGhZAbf1EeyumO4UQE2UTw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_cGhZA7f1EeyumO4UQE2UTw" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_NdXDUrgNEeyumO4UQE2UTw" name="resource1" promote="Componentgettingfromcallprocess/resource1">
+    <sca:interface.wsdl xmi:id="_NdXDVrgNEeyumO4UQE2UTw" interface="http://xmlns.example.com/20220409192832PLT#wsdl.interface(resource1)" scaext:wsdlLocation="../Processes/assignment/gettingfromcallprocess.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_NdXDV7gNEeyumO4UQE2UTw" name="RestService1" path="/resource1" docBasePath="http://localhost:7777/ASSIGNMENT" docResourcePath="Resource1" basePath="/" connector="assignment.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/assignment.gettingfromcallprocess-Resource1.json">
+      <operation xmi:id="_NdXDWbgNEeyumO4UQE2UTw" operationName="get" nickname="get-resource1" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_4iDcILgOEeyumO4UQE2UTw">
+          <parameterMapping xmi:id="_4iDcIbgOEeyumO4UQE2UTw" parameterName="CCCARDTYPE" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_NdgNQLgNEeyumO4UQE2UTw"/>
+      <advancedConfig xmi:id="_NdXDWLgNEeyumO4UQE2UTw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_NdXDWrgNEeyumO4UQE2UTw" bindingName="RestService1"/>
+  </sca:service>
+  <sca:property xmi:id="_rZ3ysLcCEeyDSoRpqfkokQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_raBjsLcCEeyDSoRpqfkokQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_raLUsLcCEeyDSoRpqfkokQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_raUeoLcCEeyDSoRpqfkokQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_raePoLcCEeyDSoRpqfkokQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_raoAoLcCEeyDSoRpqfkokQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_raxKkLcCEeyDSoRpqfkokQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_raxKkbcCEeyDSoRpqfkokQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ra67kLcCEeyDSoRpqfkokQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CbsNMLgvEey_oOXPfPxhLQ" name="Property" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_CylDMLgvEey_oOXPfPxhLQ" name="Property1" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_XY2wALf1EeyumO4UQE2UTw" name="Componentgettherecords" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_XY2wAbf1EeyumO4UQE2UTw" processName="assignment.gettherecords"/>
+    <sca:service xmi:id="_cGXoALf1EeyumO4UQE2UTw" name="resource">
+      <sca:interface.wsdl xmi:id="_cGXoAbf1EeyumO4UQE2UTw" interface="http://xmlns.example.com/20220409163820PLT#wsdl.interface(resource)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_JHU3MLgNEeyumO4UQE2UTw" name="Componentgettingfromcallprocess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_JHU3MbgNEeyumO4UQE2UTw" processName="assignment.gettingfromcallprocess"/>
+    <sca:service xmi:id="_NdXDULgNEeyumO4UQE2UTw" name="resource1">
+      <sca:interface.wsdl xmi:id="_NdXDUbgNEeyumO4UQE2UTw" interface="http://xmlns.example.com/20220409192832PLT#wsdl.interface(resource1)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_RV7X4LgvEey_oOXPfPxhLQ" name="ComponentAssignmentTWO" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_RV7X4bgvEey_oOXPfPxhLQ" processName="assignmentTWO.AssignmentTWO"/>
+  </sca:component>
+  <sca:component xmi:id="_zskQ4LgvEey_oOXPfPxhLQ" name="ComponentAssignmentReceiver" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_zskQ4bgvEey_oOXPfPxhLQ" processName="assignmentTWO.AssignmentReceiverONE"/>
+  </sca:component>
+  <sca:component xmi:id="_ZqSI0LgxEey_oOXPfPxhLQ" name="ComponentAssignmentReceiverTWO" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ZqSI0bgxEey_oOXPfPxhLQ" processName="assignmentTWO.AssignmentReceiverTWO"/>
+  </sca:component>
+  <sca:component xmi:id="_bu_LgLgxEey_oOXPfPxhLQ" name="ComponentAssignmentReceiverTHREE" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bu_LgbgxEey_oOXPfPxhLQ" processName="assignmentTWO.AssignmentReceiverTHREE"/>
+  </sca:component>
+  <sca:component xmi:id="_hHDVwLjIEeyR_dCDLMYgdg" name="ComponentMapperActivity" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_hHDVwbjIEeyR_dCDLMYgdg" processName="assignment.assignmentTHREE.MapperActivity"/>
+  </sca:component>
+  <sca:component xmi:id="_DtPOMLjrEeyH-6N0qO5VLg" name="ComponentXMLtoJSON" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_DtPOMbjrEeyH-6N0qO5VLg" processName="assignment.XMLtoJSON"/>
+  </sca:component>
+  <sca:component xmi:id="_oK350Lj0EeyH-6N0qO5VLg" name="ComponentJSONtoXML" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_oK350bj0EeyH-6N0qO5VLg" processName="assignment.JSONtoXML"/>
+  </sca:component>
+  <sca:component xmi:id="_UK65wMauEeyRIIUQvDnhIA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_UK65wcauEeyRIIUQvDnhIA" processName="assignment.Process"/>
+  </sca:component>
+</sca:composite>

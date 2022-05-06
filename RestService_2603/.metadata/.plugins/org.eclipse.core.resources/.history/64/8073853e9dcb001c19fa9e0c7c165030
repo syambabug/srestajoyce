@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.tibco.com/ADD/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ADD" targetNamespace="http://www.tibco.com/ADD/">
+    <wsdl:types><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.tibco.com/ADD/">
+	<xsd:complexType name="REQADD">
+		<xsd:sequence>
+			<xsd:element name="NUM1" type="xsd:int"></xsd:element>
+			<xsd:element name="NUM2" type="xsd:int"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType></xsd:schema></wsdl:types>
+    <wsdl:message name="ADDRequest">
+    <wsdl:part name="ADDRequest" type="tns:REQADD"/>
+  </wsdl:message>
+  <wsdl:message name="ADDResponse">
+    <wsdl:part name="ADDResponse" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:portType name="ADD">
+    <wsdl:operation name="ADD">
+      <wsdl:input message="tns:ADDRequest"/>
+      <wsdl:output message="tns:ADDResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ADDSOAP" type="tns:ADD">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ADD">
+      <soap:operation soapAction="http://www.tibco.com/ADD/ADD"/>
+      <wsdl:input>
+        <soap:body namespace="http://www.tibco.com/ADD/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body namespace="http://www.tibco.com/ADD/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ADD">
+    <wsdl:port binding="tns:ADDSOAP" name="ADDSOAP">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

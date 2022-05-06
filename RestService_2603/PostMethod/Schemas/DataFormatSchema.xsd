@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat/3dd3ce07-1aac-4c78-bb95-faa4f97dc3a9" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ns.tibco.com/bw/palette/dataformat/3dd3ce07-1aac-4c78-bb95-faa4f97dc3a9">
+  <xsd:element name="CustomerDetails" tibex:source="sr.index.dataFormatResource">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="CustID" type="xsd:integer"/>
+        <xsd:element name="CustName" type="xsd:string"/>
+        <xsd:element name="CustAddress" type="xsd:string"/>
+        <xsd:element name="CustMailID" type="xsd:string"/>
+        <xsd:element name="CustPhNo" type="xsd:string"/>
+        <xsd:element name="CustSAL" type="xsd:string"/>
+        <xsd:element name="CustProof" type="xsd:string"/>
+                <xsd:element name="CustStatus" type="xsd:string"/>
+                <xsd:element name="CustCreatedDateTime" type="xsd:dateTime"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

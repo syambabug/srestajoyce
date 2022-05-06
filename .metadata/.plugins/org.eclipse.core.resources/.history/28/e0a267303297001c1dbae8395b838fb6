@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/breakfast_menu" xmlns:tns="http://www.example.org/breakfast_menu" elementFormDefault="qualified">
+
+    <complexType name="Breakfast_menuType">
+    	<sequence>
+    		<element ref="tns:Food" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Food_Type"></complexType>
+
+
+
+
+
+
+    <element name="Name" type="string"></element>
+
+    <element name="Price" type="int"></element>
+
+    <element name="Description" type="string"></element>
+
+    <element name="Calories" type="string"></element>
+
+    <element name="Brackfastmenu" type="tns:Breakfast_menuType"></element>
+
+    <element name="Food" type="tns:Food_Type"></element>
+</schema>

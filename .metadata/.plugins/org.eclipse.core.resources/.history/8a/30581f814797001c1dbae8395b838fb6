@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/World" xmlns:tns="http://www.example.org/World" elementFormDefault="qualified">
+
+    <complexType name="World_Type">
+    	<sequence>
+    		<element ref="tns:Asia" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+    
+
+    <complexType name="Asia_Type">
+    	<sequence>
+    		<element ref="tns:Countrys"></element>
+    		<element ref="tns:States"></element>
+    		<element ref="tns:Districts"></element>
+    		<element ref="tns:Citys"></element>
+    		<element ref="tns:Mandals"></element>
+    		<element ref="tns:Villages"></element>
+    	</sequence>
+    </complexType>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <element name="Countrys" type="string"></element>
+
+    <element name="States" type="string"></element>
+
+    <element name="Districts" type="string"></element>
+
+    <element name="Citys" type="string"></element>
+
+    <element name="Mandals" type="string"></element>
+
+    <element name="Villages" type="string"></element>
+
+
+    <element name="World" type="tns:World_Type"></element>
+
+    <element name="Asia" type="tns:Asia_Type"></element>
+
+    <complexType name="Countrys_Type"></complexType>
+</schema>

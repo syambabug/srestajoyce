@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/1CustomerDetails" xmlns:tns="http://www.example.org/1CustomerDetails" elementFormDefault="qualified">
+
+    <complexType name="CCustomer_DetailsType">
+    	<sequence>
+    		<element ref="tns:CCustomer" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="CCustomerType">
+    	<sequence>
+    		<element ref="tns:CCustomerID"></element>
+    		<element ref="tns:CCustomerName"></element>
+    		<element ref="tns:CCustACType"></element>
+    		<element ref="tns:CCardtype"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="CCustomerDetails" type="tns:CCustomer_DetailsType"></element>
+
+    <element name="CCustomer" type="tns:CCustomerType"></element>
+
+    <element name="CCustomerID" type="int"></element>
+
+    <element name="CCustomerName" type="string"></element>
+
+    <element name="CCustACType" type="string"></element>
+
+    <element name="CCardtype" type="string"></element>
+</schema>

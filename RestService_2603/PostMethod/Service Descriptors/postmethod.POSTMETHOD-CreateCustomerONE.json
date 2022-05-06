@@ -1,0 +1,96 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:4578",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/createcustomerone" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-createcustomerone",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/CCustomerDetails"
+          },
+          "required" : true
+        }, {
+          "name" : "CardType",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "CustomerID",
+          "in" : "query",
+          "description" : "",
+          "type" : "integer",
+          "format" : "int32",
+          "required" : false
+        }, {
+          "name" : "CustomerName",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "CustomerACType",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a CCustomerDetails to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/CCustomerDetails"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "CCustomer" : {
+      "type" : "object",
+      "required" : [ "CCustomerID", "CCustomerName", "CCustACType", "CCardtype" ],
+      "properties" : {
+        "CCustomerID" : {
+          "type" : "integer"
+        },
+        "CCustomerName" : {
+          "type" : "string"
+        },
+        "CCustACType" : {
+          "type" : "string"
+        },
+        "CCardtype" : {
+          "type" : "string"
+        }
+      }
+    },
+    "CCustomerDetails" : {
+      "type" : "object",
+      "properties" : {
+        "CCustomer" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/CCustomer",
+            "uniqueItems" : false
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/CustomerDetails" xmlns:tns="http://www.example.org/CustomerDetails" elementFormDefault="qualified">
+
+    <complexType name="Customer_type">
+    	<sequence>
+    		<element ref="tns:CustomerID"></element>
+    		<element ref="tns:CustomerName"></element>
+    		<element ref="tns:CustomerAddress"></element>
+    		<element ref="tns:CustomerMailID"></element>
+    		<element ref="tns:CustomerPHNO"></element>
+    		<element ref="tns:CustomerSal"></element>
+    		<element ref="tns:CustomerProof"></element>
+    		<element ref="tns:CustomerStatus"></element>
+    		<element ref="tns:CustomerCraetedDateTime"></element>
+    	</sequence>
+    </complexType>
+    
+
+    <complexType name="CustomerDeatsils_type">
+    	<sequence>
+    		<element ref="tns:Customer" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="CustomerID" type="string"></element>
+
+    <element name="CustomerName" type="string"></element>
+
+    <element name="CustomerAddress" type="string"></element>
+
+    <element name="CustomerMailID" type="string"></element>
+
+
+    <element name="CustomerPHNO" type="string"></element>
+
+    <element name="CustomerSal" type="string"></element>
+
+    <element name="CustomerProof" type="string"></element>
+
+    <element name="CustomerStatus" type="string"></element>
+
+    <element name="CustomerCraetedDateTime" type="string"></element>
+
+    <element name="Customer" type="tns:Customer_type"></element>
+
+    <element name="CustomerDeails" type="tns:CustomerDeatsils_type"></element>
+</schema>

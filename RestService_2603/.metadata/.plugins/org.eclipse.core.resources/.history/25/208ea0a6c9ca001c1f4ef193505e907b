@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_6zqdoK0yEey3AcOmKR6_pQ" targetNamespace="http://tns.tibco.com/bw/composite/RestService" name="RestService" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_r2XbEK02Eey3AcOmKR6_pQ" name="resource" promote="ComponentGetCustomerDetails/resource">
+    <sca:interface.wsdl xmi:id="_r2kPYK02Eey3AcOmKR6_pQ" interface="http://xmlns.example.com/20220327000116PLT#wsdl.interface(resource)" scaext:wsdlLocation="../Processes/restservice/GetCustomerDetails.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_r2zf8K02Eey3AcOmKR6_pQ" name="RestService" path="/resource" docBasePath="http://localhost:7777/RestService" docResourcePath="Resource" basePath="/" connector="restservice.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/restservice.GetCustomerDetails-Resource.json">
+      <operation xmi:id="_r25mkK02Eey3AcOmKR6_pQ" operationName="get" nickname="get-resource" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_skaFcK05Eey3AcOmKR6_pQ">
+          <parameterMapping xmi:id="_skaFca05Eey3AcOmKR6_pQ" parameterName="FirstName" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_sppKwK05Eey3AcOmKR6_pQ" parameterName="LastName" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_r4PDUK02Eey3AcOmKR6_pQ"/>
+      <advancedConfig xmi:id="_r22jQK02Eey3AcOmKR6_pQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_r25mka02Eey3AcOmKR6_pQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_RKTvIK9aEeyry_xlHoX2kw" name="getcustdetails" promote="ComponentGetCustomerDetails2/getcustdetails">
+    <sca:interface.wsdl xmi:id="_RKZOsa9aEeyry_xlHoX2kw" interface="http://xmlns.example.com/20220329155511PLT#wsdl.interface(getcustdetails)" scaext:wsdlLocation="../Processes/restservice/GetCustomerDetails2.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_RKfVUK9aEeyry_xlHoX2kw" name="RestService1" path="/getcustdetails" docBasePath="http://localhost:7777/RestService" docResourcePath="getcustdetails" basePath="/" connector="restservice.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/restservice.GetCustomerDetails2-getcustdetails.json">
+      <operation xmi:id="_RKfVUq9aEeyry_xlHoX2kw" operationName="get" nickname="get-getcustdetails" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_vaooIK9cEeyry_xlHoX2kw">
+          <parameterMapping xmi:id="_vaooIa9cEeyry_xlHoX2kw" parameterName="CustID" parameterType="Query" dataType="integer#int32"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_RKiYoK9aEeyry_xlHoX2kw"/>
+      <advancedConfig xmi:id="_RKfVUa9aEeyry_xlHoX2kw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_RKfVU69aEeyry_xlHoX2kw" bindingName="RestService1"/>
+  </sca:service>
+  <sca:service xmi:id="_i2Ws8MqfEey5hY5PRbfAkg" name="resource1" promote="ComponentGetcustomerdetails3/resource1">
+    <sca:interface.wsdl xmi:id="_i2sEIMqfEey5hY5PRbfAkg" interface="http://xmlns.example.com/20220503101757PLT#wsdl.interface(resource1)" scaext:wsdlLocation="../Processes/restservice/Getcustomerdetails3.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_i23qUMqfEey5hY5PRbfAkg" name="RestService2" path="/resource1" docBasePath="http://localhost:7777/RestService" docResourcePath="Resource1" basePath="/" connector="restservice.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/restservice.Getcustomerdetails3-Resource1.json">
+      <operation xmi:id="_i28i0MqfEey5hY5PRbfAkg" operationName="get" nickname="get-resource1" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_dQp_AMq7Eey5hY5PRbfAkg">
+          <parameterMapping xmi:id="_dQp_Acq7Eey5hY5PRbfAkg" parameterName="firstname" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_do1OcMq7Eey5hY5PRbfAkg" parameterName="lastname" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_i3FswMqfEey5hY5PRbfAkg"/>
+      <advancedConfig xmi:id="_i23qUcqfEey5hY5PRbfAkg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_i29J4MqfEey5hY5PRbfAkg" bindingName="RestService2"/>
+  </sca:service>
+  <sca:service xmi:id="__VDiMcqfEey5hY5PRbfAkg" name="resource11" promote="ComponentGetcustomerdetails3/resource11">
+    <sca:interface.wsdl xmi:id="__VEwUMqfEey5hY5PRbfAkg" interface="http://xmlns.example.com/20220503101757PLT#wsdl.interface(resource11)" scaext:wsdlLocation="../Processes/restservice/Getcustomerdetails3.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="__VN6QMqfEey5hY5PRbfAkg" name="RestService3" path="/resource11" docBasePath="http://localhost:7777/RestService" docResourcePath="Resource1" basePath="/" connector="restservice.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/restservice.Getcustomerdetails3-Resource1.json">
+      <operation xmi:id="__VTZ0MqfEey5hY5PRbfAkg" operationName="get" nickname="get-resource11" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_xH8SgMq7Eey5hY5PRbfAkg">
+          <parameterMapping xmi:id="_xH8Sgcq7Eey5hY5PRbfAkg" parameterName="district" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_xuYncMq7Eey5hY5PRbfAkg" parameterName="area" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="__VWdIMqfEey5hY5PRbfAkg"/>
+      <advancedConfig xmi:id="__VN6QcqfEey5hY5PRbfAkg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="__VTZ0cqfEey5hY5PRbfAkg" bindingName="RestService3"/>
+  </sca:service>
+  <sca:service xmi:id="_jhQO0MrFEey5hY5PRbfAkg" name="resource2" promote="ComponentGetcustomerdetails4/resource2">
+    <sca:interface.wsdl xmi:id="_jhRc8MrFEey5hY5PRbfAkg" interface="http://xmlns.example.com/20220503151313PLT#wsdl.interface(resource2)" scaext:wsdlLocation="../Processes/restservice/Getcustomerdetails4.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_jhUgQMrFEey5hY5PRbfAkg" name="RestService4" path="/resource2" docBasePath="http://localhost:7777/RestService" docResourcePath="Resource2" basePath="/" connector="restservice.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/restservice.Getcustomerdetails4-Resource2.json">
+      <operation xmi:id="_jhXjkMrFEey5hY5PRbfAkg" operationName="get" nickname="get-resource2" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_rNoEoMrFEey5hY5PRbfAkg">
+          <parameterMapping xmi:id="_rNoEocrFEey5hY5PRbfAkg" parameterName="Firstname" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_rU_38MrFEey5hY5PRbfAkg" parameterName="middlename" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_rubroMrFEey5hY5PRbfAkg" parameterName="lastname" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_jhZ_0MrFEey5hY5PRbfAkg"/>
+      <advancedConfig xmi:id="_jhUgQcrFEey5hY5PRbfAkg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_jhXjkcrFEey5hY5PRbfAkg" bindingName="RestService4"/>
+  </sca:service>
+  <sca:service xmi:id="_zeFXkcrIEey5hY5PRbfAkg" name="resource3" promote="Componentgetcustomerdetails5/resource3">
+    <sca:interface.wsdl xmi:id="_zeFXlcrIEey5hY5PRbfAkg" interface="http://xmlns.example.com/20220503153520PLT#wsdl.interface(resource3)" scaext:wsdlLocation="../Processes/restservice/getcustomerdetails5.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_zeIa4MrIEey5hY5PRbfAkg" name="RestService5" path="/resource3" docBasePath="http://localhost:7777/RestService" docResourcePath="Resource3" basePath="/" connector="restservice.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/restservice.getcustomerdetails5-Resource3.json">
+      <operation xmi:id="_zeK3IMrIEey5hY5PRbfAkg" operationName="get" nickname="get-resource3" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_zeMsUMrIEey5hY5PRbfAkg"/>
+      <advancedConfig xmi:id="_zeIa4crIEey5hY5PRbfAkg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_zeK3IcrIEey5hY5PRbfAkg" bindingName="RestService5"/>
+  </sca:service>
+  <sca:property xmi:id="_7oPVMK0yEey3AcOmKR6_pQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7ohpEK0yEey3AcOmKR6_pQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7oqzAK0yEey3AcOmKR6_pQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7ow5oK0yEey3AcOmKR6_pQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7o3AQK0yEey3AcOmKR6_pQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7o9G4K0yEey3AcOmKR6_pQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7pDNgK0yEey3AcOmKR6_pQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7pJUIK0yEey3AcOmKR6_pQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7pSeEK0yEey3AcOmKR6_pQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_vQbzAK9LEeyry_xlHoX2kw" name="/Connections/HTTP/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_08L04K9LEeyry_xlHoX2kw" name="/Connections/HTTP/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_BdMB4K9NEeyry_xlHoX2kw" name="/Connections/DB/URL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_C2_GYK9NEeyry_xlHoX2kw" name="/Connections/DB/UserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DZrjwK9NEeyry_xlHoX2kw" name="/Connections/DB/Password" type="property:password" scaext:simpleValue="#!UL4b9Z9us55bLsrHp0itAA==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Dj1lUK9NEeyry_xlHoX2kw" name="/Connections/DB/Timeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_b2U40K9NEeyry_xlHoX2kw" name="/Connections/DB/Maxconnections" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_7P7i4K0yEey3AcOmKR6_pQ" name="ComponentGetCustomerDetails" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_7P8xAK0yEey3AcOmKR6_pQ" processName="restservice.GetCustomerDetails"/>
+    <sca:service xmi:id="_r2RUcK02Eey3AcOmKR6_pQ" name="resource">
+      <sca:interface.wsdl xmi:id="_r2UXwK02Eey3AcOmKR6_pQ" interface="http://xmlns.example.com/20220327000116PLT#wsdl.interface(resource)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_g8QYMK9KEeyry_xlHoX2kw" name="ComponentGetCustomerDetails2" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_g8QYMa9KEeyry_xlHoX2kw" processName="restservice.GetCustomerDetails2"/>
+    <sca:service xmi:id="_RKNogK9aEeyry_xlHoX2kw" name="getcustdetails">
+      <sca:interface.wsdl xmi:id="_RKNoga9aEeyry_xlHoX2kw" interface="http://xmlns.example.com/20220329155511PLT#wsdl.interface(getcustdetails)" scaext:wsdlLocation="../Processes/restservice/GetCustomerDetails2.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_NAD2cMqcEey5hY5PRbfAkg" name="ComponentGetcustomerdetails3" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_NAD2ccqcEey5hY5PRbfAkg" processName="restservice.Getcustomerdetails3"/>
+    <sca:service xmi:id="_i2OKEMqfEey5hY5PRbfAkg" name="resource1">
+      <sca:interface.wsdl xmi:id="_i2RNYMqfEey5hY5PRbfAkg" interface="http://xmlns.example.com/20220503101757PLT#wsdl.interface(resource1)"/>
+    </sca:service>
+    <sca:service xmi:id="__VC7IMqfEey5hY5PRbfAkg" name="resource11">
+      <sca:interface.wsdl xmi:id="__VDiMMqfEey5hY5PRbfAkg" interface="http://xmlns.example.com/20220503101757PLT#wsdl.interface(resource11)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_c099AMrFEey5hY5PRbfAkg" name="ComponentGetcustomerdetails4" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_c099AcrFEey5hY5PRbfAkg" processName="restservice.Getcustomerdetails4"/>
+    <sca:service xmi:id="_jhPnwMrFEey5hY5PRbfAkg" name="resource2">
+      <sca:interface.wsdl xmi:id="_jhPnwcrFEey5hY5PRbfAkg" interface="http://xmlns.example.com/20220503151313PLT#wsdl.interface(resource2)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_ioKjUMrIEey5hY5PRbfAkg" name="Componentgetcustomerdetails5" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ioKjUcrIEey5hY5PRbfAkg" processName="restservice.getcustomerdetails5"/>
+    <sca:service xmi:id="_zeEwgMrIEey5hY5PRbfAkg" name="resource3">
+      <sca:interface.wsdl xmi:id="_zeFXkMrIEey5hY5PRbfAkg" interface="http://xmlns.example.com/20220503153520PLT#wsdl.interface(resource3)" scaext:wsdlLocation="../Processes/restservice/getcustomerdetails5.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

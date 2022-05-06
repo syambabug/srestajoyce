@@ -1,0 +1,21 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/postmethod.Process-CreateCustomer.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/postmethod.POST-CreateCustomer.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/postmethod.POSTMETHOD-CreateCustomerONE.json",
+            "type": "generated"
+        }
+    ]
+}

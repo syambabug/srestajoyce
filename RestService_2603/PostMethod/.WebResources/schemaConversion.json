@@ -1,0 +1,17 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/PostMethod/Service Descriptors/postmethod.Process-CreateCustomer.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/CustomerDetails"
+    },
+    {
+        "jsonSchemaLocation": "/PostMethod/Service Descriptors/postmethod.POST-CreateCustomer.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/CustomerDetails"
+    },
+    {
+        "jsonSchemaLocation": "/PostMethod/Service Descriptors/postmethod.POSTMETHOD-CreateCustomerONE.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/1CustomerDetails"
+    }
+]}

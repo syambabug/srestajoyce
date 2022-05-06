@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.tibco.com/AddRec/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AddRec" targetNamespace="http://www.tibco.com/AddRec/" xmlns:xsd1="http://www.example.org/2CustomerDetails">
+  <wsdl:types>
+  	<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  		<xsd:import
+  			namespace="http://www.example.org/2CustomerDetails"
+  			schemaLocation="../Schemas/2CustomerDetails.xsd">
+  		</xsd:import></xsd:schema></wsdl:types>
+  <wsdl:message name="AddOperationsRequest">
+    <wsdl:part name="ReqOperationRequest" type="xsd1:CustomerDetails_type"/>
+  </wsdl:message>
+  <wsdl:message name="AddOperationsResponse">
+    <wsdl:part name="ResOperationResponse" type="xsd1:CustomerDetails_type"/>
+  </wsdl:message>
+  <wsdl:portType name="AddRec">
+    <wsdl:operation name="AddOperations">
+      <wsdl:input message="tns:AddOperationsRequest"/>
+      <wsdl:output message="tns:AddOperationsResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AddRecSOAP" type="tns:AddRec">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="AddOperations">
+      <soap:operation soapAction="http://www.tibco.com/AddRec/AddOperations"/>
+      <wsdl:input>
+        <soap:body namespace="http://www.tibco.com/AddRec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body namespace="http://www.tibco.com/AddRec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AddRec">
+    <wsdl:port binding="tns:AddRecSOAP" name="AddRecSOAP">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

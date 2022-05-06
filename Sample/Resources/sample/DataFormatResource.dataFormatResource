@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:affacf53-92cd-4808-85e5-b9e084bd798e="http://ns.tibco.com/bw/palette/dataformat/affacf53-92cd-4808-85e5-b9e084bd798e" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_WRukUbf_EeyumO4UQE2UTw" name="sample.DataFormatResource" type="dataformat:DataFormat">
+  <imports xmi:id="_FiSWELgAEeyumO4UQE2UTw" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ns.tibco.com/bw/palette/dataformat/affacf53-92cd-4808-85e5-b9e084bd798e"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_WRukUrf_EeyumO4UQE2UTw" formatType="Delimiter separated" colSeparator="," colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="Carriage Return/Line Feed (windows)" fillCharacter="Space" schemaElementQName="affacf53-92cd-4808-85e5-b9e084bd798e:Customer" fieldOffsetsStr="CustomerID(0,0)&#xA;CustomerName(0,0)&#xA;CustomerAddress(0,0)&#xA;CustomerMailid(0,0)&#xA;CustomerPHNO(0,0)&#xA;CustomerSAL(0,0)&#xA;CustomerProof(0,0)&#xA;CustomerStatus(0,0)&#xA;CustomerCreatedDateTime(0,0)">
+    <fieldOffsets xmi:id="_FkShMLgAEeyumO4UQE2UTw" name="CustomerID"/>
+    <fieldOffsets xmi:id="_FkShMbgAEeyumO4UQE2UTw" name="CustomerName"/>
+    <fieldOffsets xmi:id="_FkShMrgAEeyumO4UQE2UTw" name="CustomerAddress"/>
+    <fieldOffsets xmi:id="_FkShM7gAEeyumO4UQE2UTw" name="CustomerMailid"/>
+    <fieldOffsets xmi:id="_FkShNLgAEeyumO4UQE2UTw" name="CustomerPHNO"/>
+    <fieldOffsets xmi:id="_FkShNbgAEeyumO4UQE2UTw" name="CustomerSAL"/>
+    <fieldOffsets xmi:id="_FkShNrgAEeyumO4UQE2UTw" name="CustomerProof"/>
+    <fieldOffsets xmi:id="_FkShN7gAEeyumO4UQE2UTw" name="CustomerStatus"/>
+    <fieldOffsets xmi:id="_FkShOLgAEeyumO4UQE2UTw" name="CustomerCreatedDateTime"/>
+  </jndi:configuration>
+</jndi:namedResource>

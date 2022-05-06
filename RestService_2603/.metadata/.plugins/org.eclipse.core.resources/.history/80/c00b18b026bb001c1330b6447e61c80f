@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:wsdl_1649848154186="http://www.example.org/wsdl/1649848154186" xmi:id="__Qxv8LsZEeyPhLt4uZ2aYg" targetNamespace="http://tns.tibco.com/bw/composite/SAMPLETRY" name="SAMPLETRY" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_LfpgkLsaEeyPhLt4uZ2aYg" name="Process" promote="ComponentProcess/Process">
+    <sca:interface.wsdl xmi:id="_LfrVwLsaEeyPhLt4uZ2aYg" interface="http://www.example.org/wsdl/1649848154186#wsdl.interface(Process)" scaext:wsdlLocation="../Service%20Descriptors/Process.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_TGfOwLsdEeyPhLt4uZ2aYg" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/3f1ab50a670c4d42b555bb5c8c40d666/SOAPServiceBinding" soapVersion="1.2" portTypeQName="wsdl_1649848154186:Process" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/SAMPLETRY/Service%20Descriptors/Process.wsdl">
+      <bindingType xmi:id="_TGgc4LsdEeyPhLt4uZ2aYg" style="DOCUMENT"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_YHEzwLsdEeyPhLt4uZ2aYg" endpointURI="/SOAPServiceBinding/process/" httpConnector="sampletry.HTTPConnectorResource"/>
+      <operationConfiguration xmi:id="_TGgc4bsdEeyPhLt4uZ2aYg" operationName="operation" action="operation" actionNeeded="true">
+        <bindingType xmi:id="_TGgc4rsdEeyPhLt4uZ2aYg"/>
+        <messageConfiguration xmi:id="_TGgc47sdEeyPhLt4uZ2aYg" messageQName="wsdl_1649848154186:operationRequest" wsdlLocation="platform:/resource/SAMPLETRY/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_TGgc5LsdEeyPhLt4uZ2aYg" partName="parameters" partElementName="wsdl_1649848154186:operationRequest"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_TGgc5bsdEeyPhLt4uZ2aYg" messageQName="wsdl_1649848154186:operationResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/SAMPLETRY/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_TGgc5rsdEeyPhLt4uZ2aYg" partName="parameters" partElementName="wsdl_1649848154186:operationResponse"/>
+        </messageConfiguration>
+        <context xmi:id="_TGgc57sdEeyPhLt4uZ2aYg">
+          <inputMapping xmi:id="_TGgc6LsdEeyPhLt4uZ2aYg"/>
+          <outputMapping xmi:id="_TGgc6bsdEeyPhLt4uZ2aYg" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_TGgc6rsdEeyPhLt4uZ2aYg" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:property xmi:id="__5JXgLsZEeyPhLt4uZ2aYg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="__5dgkLsZEeyPhLt4uZ2aYg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="__5mqgLsZEeyPhLt4uZ2aYg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="__5q78LsZEeyPhLt4uZ2aYg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="__5xpoLsZEeyPhLt4uZ2aYg" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="__54XULsZEeyPhLt4uZ2aYg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="__58BsLsZEeyPhLt4uZ2aYg" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="__6BhQLsZEeyPhLt4uZ2aYg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="__6FysLsZEeyPhLt4uZ2aYg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="__Z0XMLsZEeyPhLt4uZ2aYg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__Z0XMbsZEeyPhLt4uZ2aYg" processName="sampletry.Process"/>
+    <sca:service xmi:id="_Ler3QLsaEeyPhLt4uZ2aYg" name="Process">
+      <sca:interface.wsdl xmi:id="_LeseULsaEeyPhLt4uZ2aYg" interface="http://www.example.org/wsdl/1649848154186#wsdl.interface(Process)" scaext:wsdlLocation="../Service%20Descriptors/Process.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

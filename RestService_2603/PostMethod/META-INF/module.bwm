@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_boEYkK-IEeyvl_Q7WVFAuQ" targetNamespace="http://tns.tibco.com/bw/composite/PostMethod" name="PostMethod" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_8Qx6sq-JEeyvl_Q7WVFAuQ" name="createcustomer" promote="ComponentPOST/createcustomer">
+    <sca:interface.wsdl xmi:id="_8Qx6tq-JEeyvl_Q7WVFAuQ" interface="http://xmlns.example.com/20220329232731PLT#wsdl.interface(createcustomer)" scaext:wsdlLocation="../Processes/postmethod/POST.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_8Q0-AK-JEeyvl_Q7WVFAuQ" name="RestService" path="/createcustomer" docBasePath="http://localhost:7777/PostMethod" docResourcePath="CreateCustomer" basePath="/" connector="postmethod.CreateCustomer" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/postmethod.POST-CreateCustomer.json">
+      <operation xmi:id="_8Q0-Aq-JEeyvl_Q7WVFAuQ" operationName="post" nickname="post-createcustomer" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <parameters xmi:id="_DKBXALgoEeyFrZ0Vzbqj_w">
+          <parameterMapping xmi:id="_DKBXAbgoEeyFrZ0Vzbqj_w" parameterName="CustomerID" parameterType="Query" dataType="integer#int32"/>
+          <parameterMapping xmi:id="_DpBnMLgoEeyFrZ0Vzbqj_w" parameterName="CustomerName" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_D0VfULgoEeyFrZ0Vzbqj_w" parameterName="CustomerACType" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_Xd4RwLgoEeyFrZ0Vzbqj_w" parameterName="CardType" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_8Q4BUK-JEeyvl_Q7WVFAuQ"/>
+      <advancedConfig xmi:id="_8Q0-Aa-JEeyvl_Q7WVFAuQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_8Q0-A6-JEeyvl_Q7WVFAuQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_ikzxoLgiEeyFrZ0Vzbqj_w" name="createcustomerone" promote="ComponentPOSTMETHOD/createcustomerone">
+    <sca:interface.wsdl xmi:id="_ilDCMLgiEeyFrZ0Vzbqj_w" interface="http://xmlns.example.com/20220409215449PLT#wsdl.interface(createcustomerone)" scaext:wsdlLocation="../Processes/postmethod/POSTMETHOD.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_ilPPcLgiEeyFrZ0Vzbqj_w" name="RestService1" path="/createcustomerone" docBasePath="http://localhost:7777/PostMethod" docResourcePath="CreateCustomerONE" basePath="/" connector="postmethod.CreateCustomer" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/postmethod.POSTMETHOD-CreateCustomerONE.json">
+      <operation xmi:id="_ilYZYLgiEeyFrZ0Vzbqj_w" operationName="post" nickname="post-createcustomerone" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <parameters xmi:id="_u0YeILgoEeyFrZ0Vzbqj_w">
+          <parameterMapping xmi:id="_u0YeIbgoEeyFrZ0Vzbqj_w" parameterName="CustomerID" parameterType="Query" dataType="integer#int32"/>
+          <parameterMapping xmi:id="_vFajwLgoEeyFrZ0Vzbqj_w" parameterName="CustomerName" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_vPnBkLgoEeyFrZ0Vzbqj_w" parameterName="CustomerACType" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_va4dcLgoEeyFrZ0Vzbqj_w" parameterName="CardType" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_ilkmoLgiEeyFrZ0Vzbqj_w"/>
+      <advancedConfig xmi:id="_ilPPcbgiEeyFrZ0Vzbqj_w" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_ilYZYbgiEeyFrZ0Vzbqj_w" bindingName="RestService1"/>
+  </sca:service>
+  <sca:property xmi:id="_ccuvsK-IEeyvl_Q7WVFAuQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_cdBqoK-IEeyvl_Q7WVFAuQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_cdMpwK-IEeyvl_Q7WVFAuQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_cdaFIK-IEeyvl_Q7WVFAuQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_cdiA8K-IEeyvl_Q7WVFAuQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_cdrx8K-IEeyvl_Q7WVFAuQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_cd2xEK-IEeyvl_Q7WVFAuQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_cd-F0K-IEeyvl_Q7WVFAuQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ceHPwK-IEeyvl_Q7WVFAuQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_tEmrcK-JEeyvl_Q7WVFAuQ" name="ComponentPOST" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_tEmrca-JEeyvl_Q7WVFAuQ" processName="postmethod.POST"/>
+    <sca:service xmi:id="_8Qx6sK-JEeyvl_Q7WVFAuQ" name="createcustomer">
+      <sca:interface.wsdl xmi:id="_8Qx6sa-JEeyvl_Q7WVFAuQ" interface="http://xmlns.example.com/20220329232731PLT#wsdl.interface(createcustomer)" scaext:wsdlLocation="../Processes/postmethod/POST.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_6oXbUK-dEeytB5mYf6prKw" name="ComponentTestRestService" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_6oXbUa-dEeytB5mYf6prKw" processName="postmethod.TestRestService"/>
+  </sca:component>
+  <sca:component xmi:id="_qiQLULC5EeyM0_dGvUJamg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_qiQLUbC5EeyM0_dGvUJamg" processName="postmethod.Timer"/>
+  </sca:component>
+  <sca:component xmi:id="_QiETELdgEeycqvW_B9zhmg" name="Component1Process" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_QiETEbdgEeycqvW_B9zhmg" processName="postmethod.Process"/>
+  </sca:component>
+  <sca:component xmi:id="_HXNQkLdhEeycqvW_B9zhmg" name="Componentxmltoother" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_HXNQkbdhEeycqvW_B9zhmg" processName="postmethod.xmltoother"/>
+  </sca:component>
+  <sca:component xmi:id="_lAniMLghEeyFrZ0Vzbqj_w" name="ComponentPOSTMETHOD" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lAniMbghEeyFrZ0Vzbqj_w" processName="postmethod.POSTMETHOD"/>
+    <sca:service xmi:id="_ikqAoLgiEeyFrZ0Vzbqj_w" name="createcustomerone">
+      <sca:interface.wsdl xmi:id="_ikqAobgiEeyFrZ0Vzbqj_w" interface="http://xmlns.example.com/20220409215449PLT#wsdl.interface(createcustomerone)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

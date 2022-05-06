@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Cardselector" xmlns:tns="http://www.example.org/Cardselector" elementFormDefault="qualified">
+
+    <element name="Card" type="string"></element>
+
+    <complexType name="CardselectorType">
+    	<sequence>
+    		<element ref="tns:Card"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="Cardselector" type="tns:CardselectorType"></element>
+</schema>

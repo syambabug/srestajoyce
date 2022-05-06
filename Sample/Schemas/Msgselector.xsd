@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Msgselector" xmlns:tns="http://www.example.org/Msgselector" elementFormDefault="qualified">
+
+    <complexType name="Msgselector_Type">
+    	<sequence>
+    		<element ref="tns:MSG" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="MSG_Type">
+    	<sequence>
+    		<element name="MsgID" type="string"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="Msgselector" type="tns:Msgselector_Type"></element>
+
+    <element name="MSG" type="tns:MSG_Type"></element>
+
+</schema>

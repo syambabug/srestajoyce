@@ -1,0 +1,73 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:7416",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/resource11" : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-resource11",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "CustID",
+          "in" : "query",
+          "description" : "",
+          "type" : "integer",
+          "format" : "int32",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a CustDetails to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/CustDetails"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "CustDetails" : {
+      "type" : "object",
+      "required" : [ "CustAddress", "CustPHNO", "CustName", "CustMailID", "CustID", "CustSAL", "CustCreatedDateTime", "CustStatus", "CustProof" ],
+      "properties" : {
+        "CustID" : {
+          "type" : "integer"
+        },
+        "CustName" : {
+          "type" : "string"
+        },
+        "CustAddress" : {
+          "type" : "string"
+        },
+        "CustMailID" : {
+          "type" : "string"
+        },
+        "CustPHNO" : {
+          "type" : "string"
+        },
+        "CustSAL" : {
+          "type" : "integer"
+        },
+        "CustProof" : {
+          "type" : "string"
+        },
+        "CustStatus" : {
+          "type" : "boolean"
+        },
+        "CustCreatedDateTime" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
